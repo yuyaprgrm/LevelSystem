@@ -23,7 +23,15 @@ class Eventlistener implements Listener
 	
 	public function onJoin(PlayerJoinEvent $event)
 	{
-		
+		$player = $event->getPlayer();
+		$name = $player->getName();
+		if(!$this->ls->isRegist($name)){
+			$player->sendMessage(TF::BLUE."[LevelSystem]".TF::WHITE."はじめまして, ".$name."さん");
+			$player->sendMessage(TF::BLUE."[LevelSystem]".TF::WHITE.$name."さんのデータを作成しました");
+			$this->ls->registUser($name);
+		}else{
+			$player->sendMessage(TF::BLUE."[LevelSystem]".TF::WHITE."ようこそ, ".$name. "さん");
+		}
 	}
 
 	public function onEntityDamage(EntityDamageEvent $event)
