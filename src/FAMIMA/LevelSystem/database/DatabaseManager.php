@@ -27,8 +27,8 @@ interface DatabaseManager
 
 	/**
 	 * @param string $user
-	　*
-	　* @return int
+	 *
+	 * @return int
 	 */
 	public function getExp(string $user);
 
@@ -39,6 +39,21 @@ interface DatabaseManager
 	 */
 	public function setExp(string $user, int $exp);
 
+	
+	/**
+	 * @param string $user
+	 *
+	 * @return int
+	 */
+	public function getLevelUpExp(string $user);
+
+
+	/**
+	 * @param string $user
+	 * @param int $exp
+	 */
+	public function setLevelUpExp(string $user, int $exp);
+	
 	
 	/**
 	 * @param string $user
