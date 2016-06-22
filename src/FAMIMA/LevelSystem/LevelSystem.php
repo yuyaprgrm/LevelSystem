@@ -110,6 +110,12 @@ class LevelSystem extends PluginBase
 	}
 	
 	
+	public function setLevelUpExp(string $user, int $exp)
+	{
+		$this->database->setLevelUpExp($user, $lv);
+	}
+	
+	
 	public function addExp(string $user, int $exp)
 	{
 		$Lexp = $this->database->getExp($user);
