@@ -15,6 +15,10 @@ class Eventlistener implements Listener
 	/** @var LevelSystem */
 	private $ls;
 	
+	/** @var Array */
+	public $message = [
+			"ls" => "[".TF::BLUE."LevelSystem".TF::WHITE."]"
+			];
 	
 	public function __construct(LevelSystem $plugin)
 	{
