@@ -131,7 +131,7 @@ class LevelSystem extends PluginBase
 	}
 
 
-	public function hasRegist(string $user)
+	public function isRegist(string $user)
 	{
 		return $this->database->isRegist($user);
 	}
