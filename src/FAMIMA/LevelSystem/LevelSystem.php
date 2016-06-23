@@ -6,6 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 use FAMIMA\LevelSystem\EventListener;
+use FAMIMA\LevelSystem\database\YAMLDatabase;
 
 class LevelSystem extends PluginBase
 {
