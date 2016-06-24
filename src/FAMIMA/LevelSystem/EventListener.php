@@ -3,6 +3,7 @@
 namespace FAMIMA\LevelSystem;
 
 use pocketmine\event\Listener;
+use pocketmine\Player;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
