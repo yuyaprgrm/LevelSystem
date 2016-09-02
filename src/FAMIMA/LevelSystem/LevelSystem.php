@@ -107,7 +107,7 @@ class LevelSystem extends PluginBase
 	
 	public function getLevelUpExp(string $user)
 	{
-		return $this->getLevelUpExp($user);
+		return $this->database->getLevelUpExp($user);
 	}
 	
 	
